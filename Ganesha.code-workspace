@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\Phyton"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}

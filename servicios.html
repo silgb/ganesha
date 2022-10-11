@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GANESHA peluquerias</title>
+ <!-- Link a JS -->
+ <script defer src="/js/JavaScript_ganesha.js"></script>
+
+ <!-- Link a CSS -->
+ <link rel="stylesheet" href="/css/estilos_Ganesha.css">
+ <!-- Link a FontAwesome-->
+ <script src="https://kit.fontawesome.com/af8f1931e7.js" crossorigin="anonymous"></script>
+
+ <!-- Link a Bootstrap -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        
+        <!-- comienza el nav -->
+
+        <div id="logo-oculto" >
+          <a href="index.html" class="logo-oculto">
+            <img src="/img/logo.png" alt="logo">
+          </a>
+        </div>
+
+            <!-- Comienza el menú-hamburguesa        -->
+            <nav class="navbar navbar-light fixed-top">
+              <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" href="servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+               </div>
+              </div>
+          </div>
+          </nav>
+  <!-- termina menu-hamburguesa -->
+
+    <nav class="clasico">
+            <ul> 
+              <li class="logo">
+                <a href="index.html" class="Logo">
+                  <img src="/img/logo.png" alt="">
+              </a>
+            </li>
+                <li>
+                    <a href="index.html">INICIO</a> 
+                </li>
+                <li>
+                    <a class="link-activo" href="#" class="servicios">SERVICIOS</a> 
+                </li>
+                <li>
+                    <a href="nosotros.html">NOSOTROS</a> 
+                </li>
+                <li>
+                    <a href="contacto.html">CONTACTO</a> 
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+<!-- fin nav -->
+
+
+<section class="destacado">
+    <div class="fondo"></div>
+    <div class="texto_destacado">
+        <h1>Alisados <br> sin formol <hr> </h1>
+        <p>Es un alisado permanente sin formol con una fórmula de extrema hidratación durante  que evita que el pelo se reseque. Muchas veces se dejan zonas menos ondeadas, pero no un lacio total y esto modifica el tiempo de duración del procedimiento.</p>
+    </div>
+    <div class="img_destacado">
+        <img src="/img/destacado.jpg" alt="">
+    </div>
+</section>
+
+<section class="servicios">
+    <div class="servicios_titulos">
+        <ul>
+            <li>
+                <a href="#">ALISADOS</a>
+            </li>
+            <li>    
+                <a href="#">TRATAMIENTOS</h3></a>
+            </li>
+        </ul>
+    </div>
+    <div class="servicios_detalle">
+        <div class="detalle">
+            <img src="/img/keratinico.jpg" alt="keratinico">
+            <h4>Keratínico <br> $3500</h4>
+        </div>
+        <div class="detalle">
+            <img src="/img/definitivo.jpg" alt="definitivo">
+            <h4>Definitivo <br> $4500</h4>
+        </div>
+        <div class="detalle">
+            <img src="/img/sin_formol.png" alt="sin_formol">
+            <h4>Sin formol <br> $4000</h4>
+        </div>
+    </div>
+
+    <div class="servicios_titulos">
+       <ul> 
+            <li>
+                <a href="#">CORTE</a>
+            </li>
+            <li>
+                <a href="#">COLORACIÓN</a>
+            </li>
+            <li>
+                <a href="#">PEINADO</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="servicios_detalle">
+        <div class="detalle">
+            <img src="/img/coloracion_trad.jpg" alt="coloracion_tradicional">
+            <h4>Coloración tradicional <br> $3800</h4>
+        </div>
+        <div class="detalle">
+            <img src="/img/balayage.jpg" alt="Balayage">
+            <h4>Balayage<br> $5000</h4>
+        </div>
+        <div class="detalle">
+            <img src="/img/iluminacion.jpg" alt="iluminacion">
+            <h4>Sin formol <br> $4200</h4>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+    <footer>
+        <button class="btn-scrolltop" id="btn_scrolltop">
+        <i class="fas fa-chevron-up"></i>
+        </button>
+      <div class="iconos_redes">
+        <a href=""><img src="/img/facebook.png" alt=""></a>
+        <a href=""><img src="/img/instagram.png" alt=""></a>
+        <a href=""><img src="/img/twitter.png" alt=""></a>
+      </div>
+      <div class="texto_footer">
+        <h4>Desarrollado por Silvana Boglietti <br> Copyright 2021 GANESHA PELUQUERIAS</h4>
+      </div>
+  </footer>
+</body>
+</html>
