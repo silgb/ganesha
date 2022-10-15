@@ -778,7 +778,7 @@ el diseño esta hecho para 1920 x 1080*/
     
 }
 
-@media (max-width:412px) {
+@media (max-width:413px) {
     body > header > nav.navbar.navbar-light.fixed-top{
         padding: 0%;
     }
@@ -1399,7 +1399,7 @@ section.servicios .servicios_detalle{
 
 
 
-@media (max-width:412px){
+@media (max-width:413px){
     .destacado .texto_destacado p{
         font-weight: 400;
         line-height: 3.5rem;
@@ -1954,7 +1954,7 @@ article.nosotros .nosotros_img img{
     }
 }
 
-@media (max-width:412px){
+@media (max-width:413px){
     article.nosotros{
         width: 100%;
     }
