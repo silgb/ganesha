@@ -178,17 +178,19 @@ nav.clasico ul li .link-activo{
 }
 
 .contenedor_main > .section_main{
-    width: 32vw;
+    position: relative;
+    width: 35vw;
     display: flex;
     flex-wrap:wrap;
     justify-content: space-around;
-    padding: 3vh 20vw ;
+    /* padding: 6%; */
+    margin: 6%;
     align-items:center;
 }
 
 .contenedor_main > .section_main img{
-    width: 500px;
-    height: 500px;
+    width: 45rem;
+    height: 45rem;
 }
 
 main > .section_main img:hover{
@@ -198,25 +200,23 @@ main > .section_main img:hover{
 }
 
 main .section_main h2{
-    margin-right: 19vw;
-    margin-top: 3vh;
+    position: absolute;
+    bottom: -12%;
+    left: 0%;
     cursor: pointer;
     font-size: 2rem;
     font-weight: 200;
     color: #e3e3cd;
 }
-body > main > section:nth-child(1) > h2{
-    margin-right: 15vw;
-}
 
 main section.section_main a{
+    position: absolute;
     font-size: 1.5rem;
     text-decoration: none;
     border: 1px solid #e3e3cd;
     padding: .3rem .9rem;
-    margin-left: 18em;
-    margin-top: -2em;
-    margin-bottom: 0%;
+    right:0;
+    bottom: -12%;
     color: #e3e3cd;
     
 }
@@ -286,7 +286,6 @@ section.section_main a:hover{
     z-index: 1;
     scroll-behavior: smooth;
     background-color:#FFF;
-    /* outline: 3px solid #663366; */
     overflow: hidden;
 }
 
@@ -1009,6 +1008,98 @@ el diseño esta hecho para 1920 x 1080*/
         padding-top: 2rem;
     }
 }
+
+
+@media (max-width:412px) {
+    body > header > nav.navbar.navbar-light.fixed-top{
+        padding: 0%;
+    }
+    #logo-oculto {
+        padding-top: 2rem;
+        width: 100%;
+    }
+    #logo-oculto > a.logo-oculto > img{
+        width: 70%;
+    }
+    
+    .portada > .contenedor_img_portada {
+        width: 100vw;
+        border: none;
+
+    }
+    body > div.portada > h3{
+        font-size: 2.7rem;
+        line-height: 5rem;
+    }
+    .contenedor_img_portada> .img_portada{
+        width: 100%;
+    }
+    body > main.contenedor_main{
+        flex-wrap: wrap;
+    }
+    body > main.contenedor_main > .section_main{
+        width: 100vw;
+        position: relative;
+    }
+    body > main.contenedor_main > .section_main > h2{
+        font-size: 1.8rem;
+        position: absolute;
+        left: 5%;
+        bottom:7%;
+        margin: 0%;
+    }
+    body > main.contenedor_main > .section_main >img{
+        width: 100vw;
+        height: fit-content;
+    }
+    body > main.contenedor_main > .section_main > a{
+        margin: 0%;
+        position: absolute;
+        right: 5%;
+        bottom:7%;
+    }
+    body > div.ubicacion > div.texto_ubicacion > h1{
+        font-size: 2rem;
+    }
+    #promo_slider,ul.slider, li {
+        height: 60rem;
+    }
+    #promo_slider > ul.slider > li > h2{
+        font-size: 3rem;
+        padding: 15%;
+        padding-top: 25%;
+        left: 0%;
+    }
+    #promo_slider > ul.slider > li > h3{
+        font-size: 2.5rem;
+        padding: 10%;
+        top:16%;
+        right: 0%;
+        left: 0%;
+    }
+    #promo_slider > ul.slider > li > h4{
+        font-size: 2.5rem;
+        padding: 10%;
+        top:35%;
+        right: 0%;
+        left: 0%;
+    }
+    body > footer > div.iconos_redes{
+        padding: 3rem 2rem 2rem 0rem;
+        text-align: left;
+    }
+    body > footer > div.iconos_redes a{
+        padding:6%;
+        text-align: left;
+    }
+    body > footer > div.texto_footer > h4{
+        font-size: 1.6rem;
+        text-align: left;
+        padding-left: 2rem;
+    }
+}
+
+
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
  
 /* comienzo página SERVICIOS */
@@ -1860,4 +1951,5 @@ article.nosotros .nosotros_img img{
 1920×1080 (escritorio grande): 7,35%.
 375×667 (móvil medio): 5%.
 1440×900 (escritorio medio): 3,17%.
-720×1280 (móvil grande): 2,74%. */
+720×1280 (móvil grande): 2,74%. 
+1080 x 2400 (móvil mio full HD)*/
