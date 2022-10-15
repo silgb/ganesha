@@ -493,6 +493,14 @@ footer{
 /* comienzo medias querys INDEX!!
 el diseño esta hecho para 1920 x 1080*/
 
+/* 360×640 (móvil pequeño): 22,64%.
+1366×768 (ordenador portátil medio): 11,98%.
+1920×1080 (escritorio grande): 7,35%.
+375×667 (móvil medio): 5%.
+1440×900 (escritorio medio): 3,17%.
+720×1280 (móvil grande): 2,74%. 
+412 x 914 (móvil mio full HD)*/
+
 @media (max-width:1440px){
     .portada > .contenedor_img_portada{
         width: 90%;
@@ -508,11 +516,10 @@ el diseño esta hecho para 1920 x 1080*/
         font-size: 1.5rem;
         margin-top: 155px;
     }
-
-    main .section_main h2{
-        margin-right: 24rem;
+    main.contenedor_main .section_main img{
+        width: 36rem;
+        height: 36rem;
     }
-
     #promo_slider{
         margin: 8rem auto;
     }
@@ -530,9 +537,6 @@ el diseño esta hecho para 1920 x 1080*/
 
     .portada > h3{
         margin-top: 166px;
-    }
-    body > main > section:nth-child(1) > h2{
-        margin-right: 23rem;
     }
     body > main > .mas_servicios{
         padding-top: 4rem;
@@ -558,17 +562,17 @@ el diseño esta hecho para 1920 x 1080*/
     }
     
     .ubicacion{
-        height: 600px;
+        height: 37rem;
     }
     .ubicacion .texto_ubicacion{
-        height: 600px;
+        height: 37rem;
     }
 
     .ubicacion .texto_ubicacion h2{
         font-size: 2rem ;
     }
     .ubicacion .mapa{
-        height: 600px;
+        height: 37rem;
     }
 }
 
@@ -643,21 +647,18 @@ el diseño esta hecho para 1920 x 1080*/
 
     .contenedor_main > .section_main{
         width: 90%;
+        padding: 5% 0;
     }
     
     .contenedor_main > .section_main h2 {
         font-size: 2.2rem;
-        margin-right: 108%;
-    }
-    body > main > section:nth-child(1) > h2{
-        margin-right: 103%;
+        left:5%;
     }
     .contenedor_main > .section_main a{
         color: #e3e3cd;
         border: 2px solid #e3e3cd;
         padding: .2rem .9rem;
-        margin-left: 19em;
-        margin-top: -1.5em;
+        right: 4%;
     }
 
     section.section_main a:hover{
@@ -777,6 +778,110 @@ el diseño esta hecho para 1920 x 1080*/
     
 }
 
+@media (max-width:412px) {
+    body > header > nav.navbar.navbar-light.fixed-top{
+        padding: 0%;
+    }
+    #logo-oculto {
+        padding-top: 2rem;
+        width: 100%;
+    }
+    #logo-oculto > a.logo-oculto > img{
+        width: 70%;
+    }
+    
+    .portada > .contenedor_img_portada {
+        width: 100vw;
+        border: none;
+
+    }
+    body > div.portada > h3{
+        font-size: 2.7rem;
+        line-height: 5rem;
+    }
+    .contenedor_img_portada> .img_portada{
+        width: 100%;
+    }
+    main.contenedor_main{
+        flex-wrap: wrap;
+    }
+    main.contenedor_main > .section_main{
+        width: 100vw;
+        position: relative;
+        margin:8%;
+    }
+    main.contenedor_main > .section_main > h2{
+        font-size: 1.8rem;
+        position: absolute;
+        left: 5%;
+        bottom:-10%;
+        margin: 0%;
+    }
+    main.contenedor_main > .section_main >img{
+        width: 100vw;
+        height: fit-content;
+    }
+    main.contenedor_main > .section_main > a{
+        margin: 0%;
+        position: absolute;
+        right: 5%;
+        bottom:-10%;
+    }
+    div.ubicacion > div.texto_ubicacion > h1{
+        font-size: 3.5rem;
+    }
+    div.ubicacion > div.texto_ubicacion > h2{
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+    #promo_slider {
+        height: 60rem;
+    }
+    #promo_slider > ul.slider{
+        height: 60rem;
+    }
+
+    #promo_slider > ul.slider > li{
+        height: 60rem;
+    }
+
+    #promo_slider > ul.slider > li > h2{
+        font-size: 3rem;
+        padding: 15%;
+        padding-top: 25%;
+        left: 0%;
+    }
+    #promo_slider > ul.slider > li > h3{
+        font-size: 2.2rem;
+        padding: 10%;
+        top:23%;
+        right: 0%;
+        left: 0%;
+        margin: 0%;
+    }
+    #promo_slider > ul.slider > li > h4{
+        font-size: 2.5rem;
+        padding: 10%;
+        top:49%;
+        right: 0%;
+        left: 0%;
+    }
+    footer > div.iconos_redes{
+        padding: 3rem 2rem 2rem 0rem;
+        text-align: left;
+    }
+    footer > div.iconos_redes a{
+        padding:6%;
+        text-align: left;
+    }
+    footer > div.texto_footer > h4{
+        font-size: 1.6rem;
+        text-align: left;
+        padding-left: 2rem;
+    }
+}
+
+
 @media (max-width: 375px){
     header{
        min-width: 100vw;
@@ -808,8 +913,7 @@ el diseño esta hecho para 1920 x 1080*/
     }
     main.contenedor_main{
         width: 100%;
-        padding-top: 30rem;
-        /* height: 40rem; */
+        padding-top: 35rem;
         margin-top: 0;
     }
 
@@ -828,16 +932,14 @@ el diseño esta hecho para 1920 x 1080*/
     .contenedor_main > .section_main a{
         border: 1px solid #e3e3cd;
         padding: .001rem .7rem;
-        margin-left: 7em;
-        margin-top: -1.5em;
     }
     
-    .mas_servicios{
-        padding-top: 3rem;
+    .contenedor_main > .mas_servicios{
+        padding-top: 8rem;
     }
     
     .mas_servicios a{
-        color: #e3e3cd;
+        color: #666666;
         font-family: 'Quicksand', sans-serif;
         font-size: 1.9rem;
     }
@@ -845,18 +947,18 @@ el diseño esta hecho para 1920 x 1080*/
     #promo_slider{
         margin: 6vh auto;
         width: 90%;
-        height: 46rem;
+        height: 55rem;
     }
 
     #promo_slider ul{
         margin: 0px;
         width: 100%;
-        height: 46rem;
+        height: 55rem;
     }
     
     #promo_slider > ul.slider li{
         width: 100%;
-        height: 46rem;
+        height: 55rem;
     }
     
     #promo_slider > ul.slider li h2{
@@ -866,17 +968,19 @@ el diseño esta hecho para 1920 x 1080*/
     #promo_slider > ul.slider li h3{
         font-size: 2rem;
         top:21%;
-        right:23%;
         line-height: 2.8rem;
     }
     #promo_slider > ul.slider li h4{
+        margin: 0 2rem;
+        padding: 6%;
         top:43%;
-        right:33%;
         font-size: 1.7rem;
     }
 
     #promo_slider> ul.menu{
-        margin-top: 18%;
+        margin-top: 25%;
+        position: absolute;
+        bottom: -10%;
         flex-wrap: nowrap;
         left: 9rem;
     }
@@ -903,7 +1007,7 @@ el diseño esta hecho para 1920 x 1080*/
     }
    .texto_ubicacion{
         min-width: 100%;
-        max-height: 400px;
+        max-height: 27rem;
     }
 
     .ubicacion .texto_ubicacion h1{
@@ -929,10 +1033,13 @@ el diseño esta hecho para 1920 x 1080*/
         height: 400px;
     }
 
-    footer .iconos_redes{
+    html body footer{
+        height: 70%;
+    }
+
+    html body footer .iconos_redes{
         text-align: left;
-        padding-bottom: 0;
-        padding-top: 5rem;
+        padding: 5rem 2rem 2rem 2rem;
     }
    
     .iconos_redes a{
@@ -947,11 +1054,11 @@ el diseño esta hecho para 1920 x 1080*/
     .texto_footer h4{
         text-align: left;
         padding-left: 5%;
-        padding-top: 5%;
+        padding-top: 9%;
         font-size: 1.2rem;
         font-weight: 300;
         color: #e3e3cd;
-        line-height: 180%;
+        line-height: 150%;
     }
 }
 
@@ -964,9 +1071,14 @@ el diseño esta hecho para 1920 x 1080*/
     }
     main.contenedor_main{
         width: 100%;
-        padding-top: 21rem;
+        padding-top: 31rem;
         margin-top: 0;
     }
+
+    #promo_slider ul.slider li h2{
+        left: 0%;
+    }
+
     .ubicacion .texto_ubicacion h1{
         font-size: 2rem ;
     }
@@ -984,17 +1096,7 @@ el diseño esta hecho para 1920 x 1080*/
         margin-left: 12em;
         margin-top: -1.9em;
     }
-    .mas_servicios{
-        padding-top: 3rem;
-    }
     
-    .mas_servicios a{
-        color: #666666;
-        background-color: #e3e3cd;
-        font-family: 'Quicksand', sans-serif;
-        font-weight: 500;
-        font-size: 1.3rem;
-    }
     .mas_servicios a:hover{
         color: #e3e3cd;
         background-color: #666666;
@@ -1006,96 +1108,6 @@ el diseño esta hecho para 1920 x 1080*/
     }
     footer .iconos_redes{
         padding-top: 2rem;
-    }
-}
-
-
-@media (max-width:412px) {
-    body > header > nav.navbar.navbar-light.fixed-top{
-        padding: 0%;
-    }
-    #logo-oculto {
-        padding-top: 2rem;
-        width: 100%;
-    }
-    #logo-oculto > a.logo-oculto > img{
-        width: 70%;
-    }
-    
-    .portada > .contenedor_img_portada {
-        width: 100vw;
-        border: none;
-
-    }
-    body > div.portada > h3{
-        font-size: 2.7rem;
-        line-height: 5rem;
-    }
-    .contenedor_img_portada> .img_portada{
-        width: 100%;
-    }
-    body > main.contenedor_main{
-        flex-wrap: wrap;
-    }
-    body > main.contenedor_main > .section_main{
-        width: 100vw;
-        position: relative;
-    }
-    body > main.contenedor_main > .section_main > h2{
-        font-size: 1.8rem;
-        position: absolute;
-        left: 5%;
-        bottom:7%;
-        margin: 0%;
-    }
-    body > main.contenedor_main > .section_main >img{
-        width: 100vw;
-        height: fit-content;
-    }
-    body > main.contenedor_main > .section_main > a{
-        margin: 0%;
-        position: absolute;
-        right: 5%;
-        bottom:7%;
-    }
-    body > div.ubicacion > div.texto_ubicacion > h1{
-        font-size: 2rem;
-    }
-    #promo_slider,ul.slider, li {
-        height: 60rem;
-    }
-    #promo_slider > ul.slider > li > h2{
-        font-size: 3rem;
-        padding: 15%;
-        padding-top: 25%;
-        left: 0%;
-    }
-    #promo_slider > ul.slider > li > h3{
-        font-size: 2.5rem;
-        padding: 10%;
-        top:16%;
-        right: 0%;
-        left: 0%;
-    }
-    #promo_slider > ul.slider > li > h4{
-        font-size: 2.5rem;
-        padding: 10%;
-        top:35%;
-        right: 0%;
-        left: 0%;
-    }
-    body > footer > div.iconos_redes{
-        padding: 3rem 2rem 2rem 0rem;
-        text-align: left;
-    }
-    body > footer > div.iconos_redes a{
-        padding:6%;
-        text-align: left;
-    }
-    body > footer > div.texto_footer > h4{
-        font-size: 1.6rem;
-        text-align: left;
-        padding-left: 2rem;
     }
 }
 
