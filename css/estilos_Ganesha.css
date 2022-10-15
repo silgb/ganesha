@@ -1397,6 +1397,53 @@ section.servicios .servicios_detalle{
     
 }
 
+
+
+@media (max-width:412px){
+    .destacado .texto_destacado p{
+        font-weight: 400;
+        line-height: 3.5rem;
+        padding: 40rem 1rem 1rem 2rem;
+    }
+
+    .destacado .img_destacado{
+        margin-top: -90rem;
+    }
+    
+    .destacado .img_destacado img{
+        border: none;
+        width: 100vw;
+    }
+    section.servicios div.servicios_titulos ul{
+        flex-wrap: wrap;
+    }
+    section.servicios div.servicios_titulos ul li{
+        padding: 1rem;
+    }
+    section.servicios .detalle{
+        outline:none;
+        width: 100vw;
+        margin-bottom: 0;
+    }
+    section.servicios .detalle img{
+        width: 100vw; 
+    }
+    footer > div.iconos_redes{
+        padding: 3rem 2rem 2rem 0rem;
+        text-align: left;
+    }
+    footer > div.iconos_redes a{
+        padding:6%;
+        text-align: left;
+    }
+    footer > div.texto_footer > h4{
+        font-size: 1.6rem;
+        text-align: left;
+        padding-left: 2rem;
+    }
+}
+
+
 @media (max-width:375px){
     body > header > nav.navbar.navbar-light.fixed-top{
         padding-top: 1.5%;
@@ -1904,6 +1951,30 @@ article.nosotros .nosotros_img img{
     }
     article.nosotros .nosotros_img img{
         width: 33rem;
+    }
+}
+
+@media (max-width:412px){
+    article.nosotros{
+        width: 100%;
+    }
+    article.nosotros >div.cuerpo-nosotros{
+        width: 100%;
+    }
+    article.nosotros >div.cuerpo-nosotros h1{
+        font-size: 3rem;
+    }
+    article.nosotros .nosotros_img{
+        width: 100vw;
+        height: fit-content;
+        margin-top: -132rem;
+    }
+    body > article.nosotros > div.nosotros_img > img{
+        width: 100vw;
+        outline: none;
+    }
+    article.nosotros >div.cuerpo-nosotros p{
+        margin-top: 45rem;
     }
 }
 
